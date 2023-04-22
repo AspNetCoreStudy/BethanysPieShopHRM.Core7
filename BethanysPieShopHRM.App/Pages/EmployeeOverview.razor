@@ -1,0 +1,30 @@
+﻿@page "/employeeoverview"
+
+ <h1>Employee Overview Page</h1>
+
+@if (Employees is null)
+{
+    <p>Loading...</p>
+}
+else
+{
+ <table class="table table-light">
+    <thead class="table-primary">
+        <tr>
+            <th>Employee Id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var e in Employees)
+        {
+            <tr>
+                <td>@e.EmployeeId</td>
+                <td>@e.FirstName</td>
+                <td>@e.LastName</td>
+            </tr>
+        }
+    </tbody>
+ </table>
+ }

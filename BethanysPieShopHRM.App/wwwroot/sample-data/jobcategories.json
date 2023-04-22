@@ -1,0 +1,12 @@
+[
+   { "JobCategoryId": 1, "JobCategoryName": "Pie research" },
+   { "JobCategoryId": 2, "JobCategoryName": "Sales" },
+   { "JobCategoryId": 3, "JobCategoryName": "Management" },
+   { "JobCategoryId": 4, "JobCategoryName": "Store staff" },
+   { "JobCategoryId": 5, "JobCategoryName": "Finance" },
+   { "JobCategoryId": 6, "JobCategoryName": "QA" },
+   { "JobCategoryId": 7, "JobCategoryName": "IT" },
+   { "JobCategoryId": 8, "JobCategoryName": "Cleaning" },
+   { "JobCategoryId": 9, "JobCategoryName": "Bakery" },
+   { "JobCategoryId": 9, "JobCategoryName": "Bakery" }
+]
