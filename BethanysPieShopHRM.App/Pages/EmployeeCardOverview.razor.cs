@@ -10,6 +10,7 @@ namespace BethanysPieShopHRM.App.Pages
         public IEmployeeService? EmployeeService { get; set; }
 
         public List<Employee>? Employees { get; set; }
+        public Employee? SelectedEmployee { get; set; }
 
         protected override async Task OnInitializedAsync()
         {
@@ -17,6 +18,11 @@ namespace BethanysPieShopHRM.App.Pages
             {
                 Employees = await EmployeeService.GetEmployees();
             }
+        }
+
+        public void ShowQuickViewPopup(Employee emp)
+        {
+            SelectedEmployee = emp;
         }
     }
 }

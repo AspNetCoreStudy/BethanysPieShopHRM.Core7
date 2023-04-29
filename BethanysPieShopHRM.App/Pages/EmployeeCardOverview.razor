@@ -10,8 +10,10 @@ else
         @foreach (var e in Employees)
         {
             <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                <EmployeeCard Employee="e"></EmployeeCard>
+                <EmployeeCard Employee="e" OnClickQuickView="ShowQuickViewPopup"></EmployeeCard>
             </div>
         }
     </div>
+
+    <QuickViewPopup Employee="SelectedEmployee"></QuickViewPopup>
 }
